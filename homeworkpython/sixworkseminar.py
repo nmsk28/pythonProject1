@@ -9,7 +9,7 @@ d = int(input('Введите разность елементов массива
 n = int(input('Введите количество элементов  массива:  '))
 a_mass = []
 for i in range(n):
-    a_mass.append(a + i*d)
+    a_mass.append(a + i * d)
 print(a_mass)
 
 '''
@@ -23,4 +23,4 @@ m_min = int(input('Введите первый элемент диапозона
 m_max = int(input('Введите последний элемент диапозона: '))
 for i in range(len(new_mass)):
     if new_mass[i] <= m_max and m_min <= new_mass[i]:
-        print( i , end=' ' )
+        print(i, end=' ')
