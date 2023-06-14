@@ -21,7 +21,7 @@ a = input('Введите Ваше имя:')
 b = input('Введите Ваш пароль:')
 c = int(input('Введите Ваш возраст:'))
 
-print('Ваши данные для входа в аккаунт:' +'имя - ' + a + ', ' + 'пароль -' + b +', ' + 'возраст - ' + str(c))
+print('Ваши данные для входа в аккаунт:' + 'имя - ' + a + ', ' + 'пароль -' + b + ', ' + 'возраст - ' + str(c))
 
 '''
 Задание 2.
@@ -32,9 +32,9 @@ print('Ваши данные для входа в аккаунт:' +'имя - ' 
 Введите время в секундах: 3600
 Время в формате ч:м:с - 1.0 : 60.0 : 3600
 '''
-time_sec = float(input('Введите время в секундах:' ))
-h = round((time_sec/360),0)
-min = round((time_sec/60),0)
+time_sec = float(input('Введите время в секундах:'))
+h = round((time_sec / 360), 0)
+min = round((time_sec / 60), 0)
 
 print('Время в формате ч: м: с -', str(f"{h}:{min}:{int(time_sec)}"))
 
@@ -46,8 +46,8 @@ print('Время в формате ч: м: с -', str(f"{h}:{min}:{int(time_sec
 Введите число n: 3
 n + nn + nnn = 369
 '''
-n = int(input('Введите целое положительное число:' ))
-sum_n = n + (10*n + n) + (100*n + 10*n +n)
+n = int(input('Введите целое положительное число:'))
+sum_n = n + (10 * n + n) + (100 * n + 10 * n + n)
 print(sum_n)
 
 '''
@@ -69,17 +69,17 @@ print(sum_n)
 Прибыль фирмы в расчете на одного сотрудника = 50.0
 '''
 
-company_revenue = int(input('Введите выручку фирмы:' ))
-company_costs = int(input('Введите издержки фирмы:' ))
+company_revenue = int(input('Введите выручку фирмы:'))
+company_costs = int(input('Введите издержки фирмы:'))
 fin_results = company_revenue - company_costs
-return_revenue = round((fin_results/company_revenue),2)
-if fin_results>0:
-    print('Прибыль:','Ее величина:', fin_results)
-    print("Рентабельность выручки:",return_revenue)
+return_revenue = round((fin_results / company_revenue), 2)
+if fin_results > 0:
+    print('Прибыль:', 'Ее величина:', fin_results)
+    print("Рентабельность выручки:", return_revenue)
     number_employees = int(input('Введите численность сотрудников:'))
-    fin_results_empl = round((fin_results/number_employees),2)
-    print('Прибыль фирмы в расчете на одного сотрудника:',fin_results_empl)
-elif fin_results<0:
+    fin_results_empl = round((fin_results / number_employees), 2)
+    print('Прибыль фирмы в расчете на одного сотрудника:', fin_results_empl)
+elif fin_results < 0:
     print('Убытки')
 else:
     print('Нет прибыли')
@@ -92,15 +92,15 @@ else:
 100 -> 1 (1 + 0 + 0) 
 '''
 # Вариант 1
-n = int(input('Введите трехзначное число:' ))
-n_1 = n//100
-n_2 = (n - n_1*100)//10
-n_3 = n - n_1*100 - n_2*10
+n = int(input('Введите трехзначное число:'))
+n_1 = n // 100
+n_2 = (n - n_1 * 100) // 10
+n_3 = n - n_1 * 100 - n_2 * 10
 sum_n = n_1 + n_2 + n_3
 print(sum_n)
 
 # Вариант 2
-n = input('Введите трехзначное число:' )
+n = input('Введите трехзначное число:')
 n_1 = int(n[0])
 n_2 = int(n[1])
 n_3 = int(n[2])
@@ -115,10 +115,10 @@ print(sum_n)
 24 -> 4 16 4
 60 -> 10 40 10
 '''
-s = int(input('Введите число:' ))
-n = s/(1+1+2*(1+1))
-if s%n == 0:
-    print('Петя сделал:',n,'Катя сделала:',2*2*n, 'Сережа сделал:',n )
+s = int(input('Введите число:'))
+n = s / (1 + 1 + 2 * (1 + 1))
+if s % n == 0:
+    print('Петя сделал:', n, 'Катя сделала:', 2 * 2 * n, 'Сережа сделал:', n)
 else:
     print('Введите правильное число:')
 
@@ -132,7 +132,7 @@ else:
 385916 -> yes
 123456 -> no
 '''
-s = input('Введите шестизначное число:' )
+s = input('Введите шестизначное число:')
 s_1 = int(s[0])
 s_2 = int(s[1])
 s_3 = int(s[2])
@@ -154,10 +154,10 @@ else:
 3 2 4 -> yes
 3 2 1 -> no
 '''
-n = int(input('Введите число:' ))
-m = int(input('Введите число:' ))
-k = int(input('Введите число:' ))
-if k%n == 0 or k%m == 0 :
+n = int(input('Введите число:'))
+m = int(input('Введите число:'))
+k = int(input('Введите число:'))
+if k % n == 0 or k % m == 0:
     print('Можно разломить шоколадку')
 else:
     print('Не так ломаешь')
